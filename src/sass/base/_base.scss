@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    @extend %font-primary;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    position: relative;
+    &--lock {
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    @include font($size: 4.5rem, $height: 5.0rem, $weight: 700);
+}
+
+h2 {
+    @include font($size: 4.0rem, $height: 5.2rem);
+    @extend %font-add;
+}
+
+h3 {
+    @include font($size: 4.0rem, $height: 5.0rem, $weight: 700);
+}
+
+h4 {
+    @include font($size: 2.0rem, $height: 2.0rem, $weight: 700);
+
+}

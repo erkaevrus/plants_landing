@@ -1,0 +1,24 @@
+.header {
+    padding: 42px 0;
+    background-color: $color-background-main;
+    @extend %font-add;
+    @include font($size: 1.6rem, $height: 2.0rem);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-line {
+    display: flex;
+}
+
+.logo__img {
+    background-image: url("../../src/img/icons/logo.svg");
+    @extend %img-container;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+}
