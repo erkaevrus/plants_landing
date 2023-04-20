@@ -414,15 +414,19 @@ template {
   display: none;
 }
 
+.header, .button {
+  transition: all 0.3s ease-out;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
 
-.header, h2 {
+.header, .button--service, h2 {
   font-family: "Inika", serif;
 }
 
-.logo__img {
+.accordion-single__arrow, .accordion__arrow, .prices__img, .about-us__img, .welcome__img, .footer__icon, .logo__img {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -439,7 +443,7 @@ html {
 
 body {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 3.5rem;
   position: relative;
 }
 body--lock {
@@ -484,6 +488,36 @@ h4 {
   line-height: 2rem;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button--welcome {
+  border-radius: 10px;
+  width: 158px;
+  height: 44px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  background-color: inherit;
+  border: 2px solid #E06733;
+  color: #010201;
+}
+.button--service {
+  border-radius: 5px;
+  width: 161px;
+  height: 50px;
+  color: #E06733;
+  border: 1px solid #E06733;
+}
+.button:hover {
+  color: #FFFFFF;
+  background-color: #E06733;
+}
+
 .container {
   max-width: 1440px;
   margin: auto;
@@ -516,12 +550,280 @@ h4 {
   margin-bottom: 4px;
 }
 
+.footer {
+  padding: 40px 0;
+  background-color: #FFFFFF;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__info {
+  display: flex;
+  column-gap: 20px;
+}
+.footer__social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+.footer__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+.footer__inst {
+  background-image: url("../../src/img/icons/inst.svg");
+}
+.footer__fb {
+  background-image: url("../../src/img/icons/fb.svg");
+}
+.footer__tw {
+  background-image: url("../../src/img/icons/tw.svg");
+}
+.footer__pinterest {
+  background-image: url("../../src/img/icons/pinterest.svg");
+}
+
 .navigation {
   display: flex;
   column-gap: 47px;
 }
 .navigation__link {
   list-style: none;
+}
+.navigation__link:hover {
+  color: #E06733;
+}
+
+.welcome {
+  background-color: #EDF2EC;
+}
+.welcome__container {
+  display: flex;
+  justify-content: start;
+  column-gap: 220px;
+}
+.welcome__img {
+  background-image: url("../../src/img/welcome/leafs.png");
+  width: 449px;
+  height: 407px;
+  margin: 62px 0;
+}
+.welcome__content {
+  max-width: 44.9263502455%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 94px;
+}
+.welcome__title {
+  padding-bottom: 48px;
+}
+.welcome__title > span {
+  color: #499A18;
+}
+.welcome__text {
+  padding-bottom: 45px;
+}
+
+.about-us {
+  background-color: #FFFFFF;
+  padding: 94px 0;
+}
+.about-us__container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 153px;
+}
+.about-us__content {
+  max-width: 49.5090016367%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.about-us__title {
+  max-width: 463px;
+}
+.about-us__title > span {
+  color: #E06733;
+}
+.about-us__text {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.about-us__img {
+  background-image: url("../../src/img/about-us/houseplant1.png");
+  width: 464px;
+  height: 479px;
+}
+
+.service {
+  padding: 40px 0 121px;
+  background-color: #EDF2EC;
+}
+.service__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.service__header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 142px;
+}
+.service__title {
+  max-width: 306px;
+  color: #499A18;
+}
+
+.button-block {
+  display: flex;
+  column-gap: 38px;
+}
+
+.cards-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 55px;
+}
+.cards-block__img {
+  display: block;
+}
+.cards-block__info {
+  max-width: 330px;
+  height: 100px;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+}
+.cards-block__title {
+  text-align: center;
+  color: #E06733;
+  padding: 10px 0;
+}
+.cards-block__text {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.prices {
+  padding: 40px 0 115px;
+  background-color: #FFFFFF;
+}
+.prices__container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 436px;
+}
+.prices__left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 57px;
+}
+.prices__img {
+  background-image: url("../../src/img/prices/small-leafs.png");
+  width: 152px;
+  height: 175px;
+}
+.prices__right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 38px;
+}
+.prices__subtitle {
+  max-width: 470px;
+  text-align: end;
+}
+
+.accordion {
+  width: 332px;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 32px;
+  padding-top: 32px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+.accordion__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  background-color: #EDF2EC;
+  border-radius: 20px;
+  padding-left: 40px;
+  width: 250px;
+  height: 50px;
+}
+.accordion__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 52px;
+}
+.accordion__title {
+  width: 100px;
+}
+.accordion__arrow {
+  background-image: url("../../src/img/icons/accordion_btn.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.contact-us {
+  padding-top: 60px;
+  background-color: #EDF2EC;
+}
+.contact-us__container {
+  display: flex;
+  justify-content: start;
+}
+.contact-us__img {
+  display: block;
+  width: 400px;
+  height: 495px;
+  margin-right: 113px;
+}
+.contact-us__title {
+  color: #499A18;
+  margin-right: 66px;
+}
+
+.accordion-single {
+  margin-top: 92px;
+  width: 36.8248772504%;
+  height: 50px;
+  background-color: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.accordion-single__header {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 175px;
+}
+.accordion-single__title {
+  width: 204px;
+}
+.accordion-single__arrow {
+  background-image: url("../../src/img/icons/accordion_btn.svg");
+  width: 16px;
+  height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

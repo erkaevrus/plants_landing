@@ -2,6 +2,7 @@
     padding: 42px 0;
     background-color: $color-background-main;
     @extend %font-add;
+    @extend %transition;
     @include font($size: 1.6rem, $height: 2.0rem);
 }
 

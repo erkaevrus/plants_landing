@@ -10,14 +10,19 @@
 
 // ---BASE---
 @import "base/base";
-// @import "base/buttons";
+@import "base/buttons";
 
 
 // ---LAYOUTS---
 @import "layouts/container";
 @import "layouts/header";
-// @import "layouts/footer";
+@import "layouts/footer";
 
 
 // ---COMPONENTS---
 @import "components/navigation";
+@import "components/welcome";
+@import "components/about-us";
+@import "components/service";
+@import "components/prices";
+@import "components/contact-us";

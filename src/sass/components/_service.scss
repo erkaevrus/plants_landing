@@ -1,0 +1,49 @@
+.service {
+    padding: 40px 0 121px;
+    background-color: $color-background-main;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 80px;
+    }
+    &__header {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 142px;
+    }
+    &__title {
+        max-width: 306px;
+        color: $color-primary;
+    }
+}
+
+.button-block {
+    display: flex;
+    column-gap: 38px;
+}
+
+.cards-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 55px;
+    &__img {
+        display: block;
+    }
+    &__info {
+        max-width: 330px;
+        height: 100px;
+        border: 1px solid #E3E1D5;
+        border-radius: 0px 0px 20px 20px;
+    }
+    &__title {
+        text-align: center;
+        color: $color-additional;
+        padding: 10px 0;
+    }
+    &__text {
+        @include font($size: 1.6rem, $height: 2.0rem);
+        text-align: center;
+    }
+}

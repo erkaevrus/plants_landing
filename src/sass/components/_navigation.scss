@@ -3,5 +3,9 @@
     column-gap: 47px;
     &__link {
         list-style: none;
+        &:hover {
+            color: $color-additional;
+        }
     }
+
 }

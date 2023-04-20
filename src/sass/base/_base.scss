@@ -10,7 +10,7 @@ html {
 body {
     @extend %font-primary;
     font-size: 2.0rem;
-    line-height: 3.0rem;
+    line-height: 3.5rem;
     position: relative;
     &--lock {
         overflow: hidden;
