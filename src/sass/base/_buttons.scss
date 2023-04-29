@@ -12,6 +12,12 @@
         background-color: inherit;
         border: 2px solid $color-additional;
         color: $color-links;
+        @media (max-width: 600px) {
+            width: 100px;
+            height: 34px;
+            @include font($size: 1.0rem, $height: 2.0rem);
+        }
+
     }
     &--service {
         border-radius: 5px;
@@ -20,8 +26,6 @@
         color: $color-additional;
         @extend %font-add;
         border: 1px solid $color-additional;
-
-
     }
     &:hover {
         color: $color-background-additional;

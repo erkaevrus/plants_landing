@@ -1,0 +1,50 @@
+.hamburger {
+    display: none;
+    height: 24px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    order: 1;
+    &__line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #717171;
+        height: 2px;
+        @extend %transition;
+        &:nth-child(1) {
+          top: 0px;
+        }
+        &:nth-child(2) {
+          top: 8px;
+        }
+        &:nth-child(3) {
+          top: 16px;
+        }
+        &:nth-child(4) {
+          top: 24px;
+        }
+    }
+    @media (max-width: 767px) {
+        display: block;
+        &--open {
+            :nth-child(1) {
+                transform: scaleX(0);
+              }
+            :nth-child(2) {
+                top: 0px;
+                transform: rotate(45deg);
+            }
+            :nth-child(3) {
+                top: 0px;
+                transform: rotate(-45deg);
+            }
+            :nth-child(4) {
+                transform: scaleX(0);
+            }
+        }
+    }
+}

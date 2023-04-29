@@ -2,10 +2,17 @@
     display: flex;
     column-gap: 47px;
     &__link {
+        @extend %transition;
         list-style: none;
         &:hover {
             color: $color-additional;
         }
     }
+    @media (max-width: 767px) {
+      display: none;
+      position: fixed;
+      z-index: 50;
+    }
+
 
 }

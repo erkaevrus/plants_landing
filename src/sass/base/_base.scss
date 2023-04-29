@@ -1,5 +1,7 @@
-* {
-    box-sizing: border-box;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
 html {
@@ -15,6 +17,11 @@ body {
     &--lock {
         overflow: hidden;
     }
+    @media (max-width: 1300px) {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+    }
+
 }
 
 a {
@@ -28,7 +35,15 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1 {
-    @include font($size: 4.5rem, $height: 5.0rem, $weight: 700);
+  @include font($size: 4.5rem, $height: 5.0rem, $weight: 700);
+  @media (max-width: 1300px) {
+    font-size: 3.5rem;
+  }
+  @media (max-width: 600px) {
+    @include font($size: 2.5rem, $height: 3.5rem, $weight: 700)
+  }
+
+
 }
 
 h2 {

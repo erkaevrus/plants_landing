@@ -2,4 +2,10 @@
     max-width: 1440px;
     margin: auto;
     padding: 0 110px;
+    @media (max-width: 1300px) {
+        padding: 0 50px;
+    }
+    @media (max-width: 767px) {
+        padding: 0 25px;
+    }
 }
