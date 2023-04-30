@@ -494,6 +494,22 @@ h2 {
   font-weight: 400;
   line-height: 5.2rem;
 }
+@media (max-width: 1300px) {
+  h2 {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+  }
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+  }
+}
 
 h3 {
   font-size: 4rem;
@@ -746,17 +762,49 @@ h4 {
   background-color: #FFFFFF;
   padding: 94px 0;
 }
+@media (max-width: 1300px) {
+  .about-us {
+    padding: 40px 0 95px 0;
+  }
+}
+@media (max-width: 600px) {
+  .about-us {
+    padding: 30px 0;
+  }
+}
 .about-us__container {
   display: flex;
   justify-content: start;
   align-items: center;
   column-gap: 153px;
 }
+@media (max-width: 1300px) {
+  .about-us__container {
+    flex-direction: column;
+    row-gap: 65px;
+  }
+}
+@media (max-width: 600px) {
+  .about-us__container {
+    row-gap: 5px;
+  }
+}
 .about-us__content {
   max-width: 49.5090016367%;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 50px;
+}
+@media (max-width: 1300px) {
+  .about-us__content {
+    max-width: 100%;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .about-us__content {
+    row-gap: 5px;
+  }
 }
 .about-us__title {
   max-width: 463px;
@@ -764,16 +812,46 @@ h4 {
 .about-us__title > span {
   color: #E06733;
 }
+@media (max-width: 1300px) {
+  .about-us__title {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .about-us__title {
+    padding-bottom: 10px;
+  }
+}
 .about-us__text {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 3rem;
 }
+@media (max-width: 600px) {
+  .about-us__text {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}
 .about-us__img {
   background-image: url("../../src/img/about-us/houseplant1.png");
   width: 464px;
   height: 479px;
+}
+@media (max-width: 1300px) {
+  .about-us__img {
+    width: 250px;
+    height: 258px;
+  }
+}
+@media (max-width: 600px) {
+  .about-us__img {
+    width: 150px;
+    height: 147px;
+  }
 }
 
 .service {
