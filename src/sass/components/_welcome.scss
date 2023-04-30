@@ -6,6 +6,7 @@
   @media (max-width: 767px) {
     padding: 24px 0;
   }
+
     &__container {
         display: flex;
         justify-content: start;
@@ -16,6 +17,7 @@
           column-gap: 42px;
         }
     }
+
     &__img {
         background-image: url("../../src/img/welcome/leafs.png");
         @extend %img-container;
@@ -28,8 +30,8 @@
         @media (max-width: 600px) {
             display: none;
         }
-
     }
+
     &__content {
         max-width: calc(549/1222*100%);
         display: flex;
@@ -42,8 +44,8 @@
         @media (max-width: 600px) {
             max-width: calc(330/330*100%);
         }
-
     }
+
     &__title {
         padding-bottom: 45px;
         >span {
@@ -55,8 +57,8 @@
         @media (max-width: 767px) {
             padding-bottom: 25px;
         }
-
     }
+
     &__text {
         padding-bottom: 45px;
         @media (max-width: 1300px) {
@@ -64,7 +66,6 @@
         }
         @media (max-width: 767px) {
             padding: 0 0 25px 0px;
-
         }
     }
 }

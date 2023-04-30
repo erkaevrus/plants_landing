@@ -554,11 +554,25 @@ h4 {
   }
 }
 .button--service {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
   border-radius: 5px;
   width: 161px;
   height: 50px;
   color: #E06733;
   border: 1px solid #E06733;
+}
+@media (max-width: 767px) {
+  .button--service {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    width: 121px;
+    height: 35px;
+  }
 }
 .button:hover {
   color: #FFFFFF;
@@ -858,10 +872,25 @@ h4 {
   padding: 40px 0 121px;
   background-color: #EDF2EC;
 }
+@media (max-width: 1300px) {
+  .service {
+    padding: 60px 0 70px;
+  }
+}
+@media (max-width: 767px) {
+  .service {
+    padding: 30px 0;
+  }
+}
 .service__container {
   display: flex;
   flex-direction: column;
   row-gap: 80px;
+}
+@media (max-width: 1300px) {
+  .service__container {
+    row-gap: 40px;
+  }
 }
 .service__header {
   display: flex;
@@ -869,14 +898,39 @@ h4 {
   align-items: center;
   column-gap: 142px;
 }
+@media (max-width: 1300px) {
+  .service__header {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .service__header {
+    row-gap: 40px;
+  }
+}
 .service__title {
   max-width: 306px;
   color: #499A18;
+}
+@media (max-width: 600px) {
+  .service__title {
+    max-width: 187px;
+  }
 }
 
 .button-block {
   display: flex;
   column-gap: 38px;
+}
+@media (max-width: 767px) {
+  .button-block {
+    flex-wrap: wrap;
+    max-width: 252px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
 }
 
 .cards-block {
@@ -885,14 +939,38 @@ h4 {
   flex-wrap: wrap;
   row-gap: 55px;
 }
+@media (max-width: 1300px) {
+  .cards-block {
+    max-width: 668px;
+    align-self: center;
+    justify-content: start;
+    column-gap: 107px;
+    row-gap: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .cards-block {
+    max-width: 280px;
+    row-gap: 34px;
+  }
+}
 .cards-block__img {
   display: block;
+  border-radius: 20px 20px 0px 0px;
 }
 .cards-block__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 330px;
   height: 100px;
   border: 1px solid #E3E1D5;
   border-radius: 0px 0px 20px 20px;
+}
+@media (max-width: 1300px) {
+  .cards-block__info {
+    max-width: 280px;
+  }
 }
 .cards-block__title {
   text-align: center;
@@ -905,6 +983,11 @@ h4 {
   font-weight: 400;
   line-height: 2rem;
   text-align: center;
+}
+@media (max-width: 1300px) {
+  .cards-block__text {
+    max-width: 201px;
+  }
 }
 
 .prices {

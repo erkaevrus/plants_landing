@@ -1,26 +1,55 @@
 .service {
     padding: 40px 0 121px;
     background-color: $color-background-main;
+    @media (max-width: 1300px) {
+        padding: 60px 0 70px;
+    }
+    @media (max-width: 767px) {
+        padding: 30px 0;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
         row-gap: 80px;
+        @media (max-width: 1300px) {
+            row-gap: 40px;
+        }
     }
+
     &__header {
         display: flex;
         justify-content: start;
         align-items: center;
         column-gap: 142px;
+        @media (max-width: 1300px) {
+            flex-direction: column;
+            align-items: start;
+            row-gap: 45px;
+        }
+        @media (max-width: 767px) {
+            row-gap: 40px;
+        }
     }
+
     &__title {
         max-width: 306px;
         color: $color-primary;
+        @media (max-width: 600px) {
+            max-width: 187px;
+        }
     }
 }
 
 .button-block {
     display: flex;
     column-gap: 38px;
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        max-width: 252px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
 }
 
 .cards-block {
@@ -28,22 +57,47 @@
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 55px;
+    @media (max-width: 1300px) {
+        max-width: 668px;
+        align-self: center;
+        justify-content: start;
+        column-gap: 107px;
+        row-gap: 38px;
+    }
+    @media (max-width: 767px) {
+        max-width: 280px;
+        row-gap: 34px;
+    }
+
     &__img {
         display: block;
+        border-radius: 20px 20px 0px 0px;
     }
+
     &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 330px;
         height: 100px;
         border: 1px solid #E3E1D5;
         border-radius: 0px 0px 20px 20px;
+        @media (max-width: 1300px) {
+            max-width: 280px;
+        }
     }
+
     &__title {
         text-align: center;
         color: $color-additional;
         padding: 10px 0;
     }
+
     &__text {
         @include font($size: 1.6rem, $height: 2.0rem);
         text-align: center;
+        @media (max-width: 1300px) {
+            max-width: 201px;
+        }
     }
 }

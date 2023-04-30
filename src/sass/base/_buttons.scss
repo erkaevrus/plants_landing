@@ -17,15 +17,20 @@
             height: 34px;
             @include font($size: 1.0rem, $height: 2.0rem);
         }
-
     }
     &--service {
+        @include font($size: 2.0rem, $height: 2.6rem);
         border-radius: 5px;
         width: 161px;
         height: 50px;
         color: $color-additional;
         @extend %font-add;
         border: 1px solid $color-additional;
+        @media (max-width: 767px) {
+            @include font($size: 1.6rem, $height: 2.5rem);
+            width: 121px;
+            height: 35px;
+        }
     }
     &:hover {
         color: $color-background-additional;
