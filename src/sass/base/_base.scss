@@ -68,7 +68,10 @@ h3 {
 h4 {
     @include font($size: 4.0rem, $height: 5.0rem, $weight: 700);
     @media (max-width: 900px) {
-        @include font($size: 2.0rem, $height: 3.5rem, $weight: 700);
+        @include font($size: 2.5rem, $height: 3.5rem, $weight: 700);
+    }
+    @media (max-width: 767px) {
+      @include font($size: 2.0rem, $height: 3.5rem, $weight: 700);
     }
 }
 

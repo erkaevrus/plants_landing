@@ -542,6 +542,14 @@ h4 {
 }
 @media (max-width: 900px) {
   h4 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 767px) {
+  h4 {
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -1191,9 +1199,25 @@ h5 {
   padding-top: 60px;
   background-color: #EDF2EC;
 }
+@media (max-width: 1430px) {
+  .contact-us {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us {
+    padding-top: 25px;
+  }
+}
 .contact-us__container {
   display: flex;
   justify-content: start;
+}
+@media (max-width: 1430px) {
+  .contact-us__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .contact-us__img {
   display: block;
@@ -1201,17 +1225,71 @@ h5 {
   height: 495px;
   margin-right: 113px;
 }
+@media (max-width: 1430px) {
+  .contact-us__img {
+    margin: 0;
+    width: 200px;
+    height: 248px;
+  }
+}
+@media (max-width: 400px) {
+  .contact-us__img {
+    width: 100px;
+    height: 124px;
+  }
+}
 .contact-us__title {
   color: #499A18;
   margin-right: 66px;
+  width: 195px;
+  font-weight: 700;
+}
+@media (max-width: 1430px) {
+  .contact-us__title {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.2rem;
+    order: 1;
+    margin: 0;
+    padding-bottom: 105px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us__title {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+    width: 192;
+    text-align: center;
+    padding-bottom: 80px;
+  }
 }
 
 .accordion-single {
+  display: flex;
   margin-top: 92px;
-  width: 36.8248772504%;
+  width: 450px;
   height: 50px;
   background-color: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1430px) {
+  .accordion-single {
+    margin: 0;
+    margin-bottom: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .accordion-single {
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .accordion-single {
+    margin-bottom: 132px;
+  }
 }
 .accordion-single__header {
   padding: 5px 20px;
@@ -1219,6 +1297,15 @@ h5 {
   justify-content: start;
   align-items: center;
   column-gap: 175px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+}
+@media (max-width: 767px) {
+  .accordion-single__header {
+    column-gap: 40px;
+  }
 }
 .accordion-single__title {
   width: 204px;

@@ -1,42 +1,96 @@
 .contact-us {
-    padding-top: 60px;
-    background-color: $color-background-main;
-    &__container {
-        display: flex;
-        justify-content: start;
+  padding-top: 60px;
+  background-color: $color-background-main;
+  @media (max-width: 1430px) {
+    padding-top: 40px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 25px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: start;
+    @media (max-width: 1430px) {
+      flex-direction: column-reverse;
+      align-items: center;
     }
-    &__img {
-        display: block;
-        width: 400px;
-        height: 495px;
-        margin-right: 113px;
+  }
+
+  &__img {
+    display: block;
+    width: 400px;
+    height: 495px;
+    margin-right: 113px;
+    @media (max-width: 1430px) {
+      margin: 0;
+      width: 200px;
+      height: 248px;
     }
-    &__title {
-        color: $color-primary;
-        margin-right: 66px;
+    @media (max-width: 400px) {
+      width: 100px;
+      height: 124px;
     }
+  }
+
+  &__title {
+    color: $color-primary;
+    margin-right: 66px;
+    width: 195px;
+    font-weight: 700;
+    @media (max-width: 1430px) {
+      @include font($size: 4.0rem, $height: 5.2rem, $weight: 700);
+      order: 1;
+      margin: 0;
+      padding-bottom: 105px;
+    }
+    @media (max-width: 767px) {
+      @include font($size: 2.5rem, $height: 3.2rem, $weight: 700);
+      width: 192;
+      text-align: center;
+      padding-bottom: 80px;
+    }
+  }
 }
 
 .accordion-single {
-    margin-top: 92px;
-    width: calc(450/1222*100%);
-    height: 50px;
-    background-color: $color-additional_1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    &__header {
-        padding: 5px 20px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        column-gap: 175px;
+  display: flex;
+  margin-top: 92px;
+  width: 450px;
+  height: 50px;
+  background-color: $color-additional_1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media (max-width: 1430px) {
+    margin:0;
+    margin-bottom: 250px;
+  }
+  @media (max-width: 767px) {
+    width: 300px;
+  }
+  @media (max-width: 400px) {
+    margin-bottom: 132px;
+  }
+
+  &__header {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 175px;
+    @include font($size: 2.0rem, $height: 4.0rem, $weight: 400);
+    @media (max-width: 767px) {
+      column-gap: 40px;
     }
-    &__title {
-        width: 204px;
-    }
-    &__arrow {
-        background-image: url("../../src/img/icons/accordion_btn.svg");
-        @extend %img-container;
-        width: 16px;
-        height: 16px;
-    }
+  }
+
+  &__title {
+    width: 204px;
+  }
+
+  &__arrow {
+      background-image: url("../../src/img/icons/accordion_btn.svg");
+      @extend %img-container;
+      width: 16px;
+      height: 16px;
+  }
 }
