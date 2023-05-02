@@ -674,13 +674,37 @@ h5 {
 }
 
 .footer {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
   padding: 40px 0;
   background-color: #FFFFFF;
+}
+@media (max-width: 800px) {
+  .footer {
+    padding: 33px 0 18px 0;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    padding: 22px 0 10px;
+  }
 }
 .footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .footer__container {
+    flex-direction: column;
+    row-gap: 16px;
+  }
 }
 .footer__info {
   display: flex;
