@@ -5,77 +5,90 @@
 }
 
 html {
-    font-size: 10px;
-    scroll-behavior: smooth;
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
-    @extend %font-primary;
-    font-size: 2.0rem;
-    line-height: 3.5rem;
-    position: relative;
-    &--lock {
-        overflow: hidden;
-    }
-    @media (max-width: 1300px) {
-      font-size: 1.6rem;
-      line-height: 2.5rem;
-    }
+  @extend %font-primary;
+  font-size: 2.0rem;
+  line-height: 3.5rem;
+  position: relative;
 
+  &--lock {
+    overflow: hidden;
+  }
+
+  @media (max-width: 1300px) {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-h1, h2, h3, h4, h5, p {
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
   @include font($size: 4.5rem, $height: 5.0rem, $weight: 700);
+
   @media (max-width: 1300px) {
     font-size: 3.5rem;
   }
+
   @media (max-width: 600px) {
     @include font($size: 2.5rem, $height: 3.5rem, $weight: 700)
   }
 }
 
 h2 {
-    @include font($size: 4.0rem, $height: 5.2rem);
-    @extend %font-add;
-    @media (max-width: 1300px) {
-        @include font($size: 3.5rem, $height: 4.5rem);
-    }
-    @media (max-width: 600px) {
-        @include font($size: 2.5rem, $height: 3.2rem);
-    }
+  @include font($size: 4.0rem, $height: 5.2rem);
+  @extend %font-add;
+
+  @media (max-width: 1300px) {
+    @include font($size: 3.5rem, $height: 4.5rem);
+  }
+
+  @media (max-width: 600px) {
+    @include font($size: 2.5rem, $height: 3.2rem);
+  }
 }
 
 h3 {
-    @include font($size: 4.0rem, $height: 5.0rem, $weight: 700);
-    @media (max-width: 900px) {
-        @include font($size: 3.5rem, $height: 4.2rem, $weight: 700);
-    }
-    @media (max-width: 767px) {
-        @include font($size: 2.5rem, $height: 3.0rem, $weight: 700);
-    }
+  @include font($size: 4.0rem, $height: 5.0rem, $weight: 700);
+
+  @media (max-width: 900px) {
+    @include font($size: 3.5rem, $height: 4.2rem, $weight: 700);
+  }
+
+  @media (max-width: 767px) {
+    @include font($size: 2.5rem, $height: 3.0rem, $weight: 700);
+  }
 }
 
 h4 {
-    @include font($size: 4.0rem, $height: 5.0rem, $weight: 700);
-    @media (max-width: 900px) {
-        @include font($size: 2.5rem, $height: 3.5rem, $weight: 700);
-    }
-    @media (max-width: 767px) {
-      @include font($size: 2.0rem, $height: 3.5rem, $weight: 700);
-    }
+  @include font($size: 4.0rem, $height: 5.0rem, $weight: 700);
+
+  @media (max-width: 900px) {
+    @include font($size: 2.5rem, $height: 3.5rem, $weight: 700);
+  }
+
+  @media (max-width: 767px) {
+    @include font($size: 2.0rem, $height: 3.5rem, $weight: 700);
+  }
 }
 
 h5 {
-    @include font($size: 2.0rem, $height: 2.0rem, $weight: 700);
-
+  @include font($size: 2.0rem, $height: 2.0rem, $weight: 700);
 }

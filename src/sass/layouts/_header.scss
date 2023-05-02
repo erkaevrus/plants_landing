@@ -4,29 +4,30 @@
 }
 
 .header {
-    padding: 42px 0;
-    @extend %font-add;
-    @include font($size: 1.6rem, $height: 2.0rem);
-    @media (max-width: 1300px) {
-      padding: 35px 0;
-    }
+  padding: 42px 0;
+  @extend %font-add;
+  @include font($size: 1.6rem, $height: 2.0rem);
+
+  @media (max-width: 1300px) {
+    padding: 35px 0;
+  }
 }
 
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .header__logo-line {
-    display: flex;
+  display: flex;
 }
 
 .logo__img {
-    background-image: url("../../src/img/icons/logo.svg");
-    @extend %img-container;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 4px;
+  background-image: url("../../src/img/icons/logo.svg");
+  @extend %img-container;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 4px;
 }

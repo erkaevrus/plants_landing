@@ -1,9 +1,11 @@
 .contact-us {
   padding-top: 60px;
   background-color: $color-background-main;
+
   @media (max-width: 1430px) {
     padding-top: 40px;
   }
+
   @media (max-width: 767px) {
     padding-top: 25px;
   }
@@ -11,6 +13,7 @@
   &__container {
     display: flex;
     justify-content: start;
+
     @media (max-width: 1430px) {
       flex-direction: column-reverse;
       align-items: center;
@@ -22,11 +25,13 @@
     width: 400px;
     height: 495px;
     margin-right: 113px;
+
     @media (max-width: 1430px) {
       margin: 0;
       width: 200px;
       height: 248px;
     }
+
     @media (max-width: 400px) {
       width: 100px;
       height: 124px;
@@ -38,12 +43,14 @@
     margin-right: 66px;
     width: 195px;
     font-weight: 700;
+
     @media (max-width: 1430px) {
       @include font($size: 4.0rem, $height: 5.2rem, $weight: 700);
       order: 1;
       margin: 0;
       padding-bottom: 105px;
     }
+
     @media (max-width: 767px) {
       @include font($size: 2.5rem, $height: 3.2rem, $weight: 700);
       width: 192;
@@ -60,13 +67,16 @@
   height: 50px;
   background-color: $color-additional_1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   @media (max-width: 1430px) {
-    margin:0;
+    margin: 0;
     margin-bottom: 250px;
   }
+
   @media (max-width: 767px) {
     width: 300px;
   }
+
   @media (max-width: 400px) {
     margin-bottom: 132px;
   }
@@ -78,6 +88,7 @@
     align-items: center;
     column-gap: 175px;
     @include font($size: 2.0rem, $height: 4.0rem, $weight: 400);
+
     @media (max-width: 767px) {
       column-gap: 40px;
     }
@@ -88,9 +99,9 @@
   }
 
   &__arrow {
-      background-image: url("../../src/img/icons/accordion_btn.svg");
-      @extend %img-container;
-      width: 16px;
-      height: 16px;
+    background-image: url("../../src/img/icons/accordion_btn.svg");
+    @extend %img-container;
+    width: 16px;
+    height: 16px;
   }
 }
